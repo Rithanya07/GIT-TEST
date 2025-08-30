@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Card</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;   /* horizontal center */
+      align-items: center;       /* vertical center */
+      background-color: #d6e2f0; /* light background */
+      font-family: Arial, sans-serif;
+    }
+
+    .img-box {
+      background-color: white;     /* card background */
+      padding: 20px;
+      border-radius: 28px;         /* rounded corners */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      text-align: center;          /* center text */
+      width: 250px;                /* card width */
+      height: 450px;               /* fixed shorter height */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* content stays at top */
+      align-items: center;
+    }
+
+    .img-box img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 10px;  /* slightly rounded square */
+      object-fit: cover;
+    }
+
+    .img-box h2 {
+      font-size: 20px;
+      color: #1f3251;
+      margin: 20px 0 10px;
+      font-family: Georgia;
+    }
+
+    .img-box h3 {
+      font-size: 15px;
+      color: #7b879d;
+      margin: 0;
+    }
+
+    /* Optional: push content a bit from top */
+    .img-box img, .img-box h2, .img-box h3 {
+      margin-top: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="img-box">
+    <img src="../GIT TEST/qr-code-component-main/qr-code-component-main/images/image-qr-code.png" alt="QR Code">
+  </br>
+    <h2>Improve your Front-End Skills by building projects</h2>
+    <h3><em>Scan the QR Code to visit Front-End Mentor and take your coding skills to next level</em></h3>
+  </div>
+</body>
+</html>
